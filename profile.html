@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Page Transition Animation Using GSAP | Rustcode</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  img{
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px 0px;
+    border-radius: 4px;
+  }
+ </style>
+</head>
+<body>
+
+<div class="content">
+  <img src="dp.jpg">
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script type="text/javascript">
+  gsap.from("img", 1.4, {
+    autoAlpha: 0,
+    y: 200,
+    delay: 0.2,
+    ease: Power4.easeInOut
+  });
+</script>
+</body>
+</html>
